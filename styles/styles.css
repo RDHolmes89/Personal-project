@@ -1,0 +1,63 @@
+body {
+    width: 100%;
+    max-width: 100vw;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+}
+/*@media screen and (min-width: 320px) and (max-width: 480px) {
+    body {
+        background-color: ;
+        
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+        background-color: ;
+    }
+}
+/*desktop*/
+/*@media screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        background-color: ;
+    }*/
+
+.background-box {
+    /*make gradient shine*/
+    box-sizing: border-box;
+    background-image:linear-gradient(180deg, #4D194D, #006466, #065A60, #0B525B, #312244);
+    border-style: none;
+    padding: 2.813em; 
+}
+
+.display-container {
+    box-sizing: border-box;
+    border-color: #111D13;
+    border-style: solid;
+    padding: 3.125em;
+    margin: 3.125em;
+    /*background-color: #A1CCA5;*/
+   
+}
+
+.display-container h2 {
+    text-align: center;
+    color: #111D13;
+    
+}
+
+
+.inside-container {
+    text-align: center;
+    box-sizing: border-box;
+    /*border-color:#415D43;
+    border-style: solid;*/
+    padding: 3.125em;
+    margin: 3.125em;  
+}
+
+.display-container button {
+    background-color: #534453;
+    
+}
+    
