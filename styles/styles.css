@@ -5,6 +5,9 @@ body {
     overflow-x: hidden;
     font-family: 'Open Sans', sans-serif;
 }
+/*root colors
+#074F57
+*/
 /*@media screen and (min-width: 320px) and (max-width: 480px) {
     body {
         background-color: ;
@@ -25,9 +28,9 @@ body {
 .background-box {
     /*make gradient shine*/
     box-sizing: border-box;
-    background-image:linear-gradient(180deg, #4D194D, #006466, #065A60, #0B525B, #312244);
+    background: linear-gradient(-45deg, #074F57, #077187, #74A57F);
     border-style: none;
-    padding: 2.813em; 
+    padding: 2.813em;
 }
 
 .display-container {
@@ -36,13 +39,14 @@ body {
     border-style: solid;
     padding: 3.125em;
     margin: 3.125em;
+    border-radius: 3em;
     /*background-color: #A1CCA5;*/
    
 }
 
 .display-container h2 {
     text-align: center;
-    color: #111D13;
+    color: #000000;
     
 }
 
@@ -57,7 +61,8 @@ body {
 }
 
 .display-container button {
-    background-color: #534453;
+    background-color: #9ECE9A;
+    border-radius: 5em;
     
 }
     
