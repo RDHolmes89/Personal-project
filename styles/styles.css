@@ -5,37 +5,69 @@ body {
     overflow-x: hidden;
     font-family: 'Open Sans', sans-serif;
 }
-/*root colors
-#074F57
-*/
-/*@media screen and (min-width: 320px) and (max-width: 480px) {
+:root {
+  --forest: #074F57;
+  --bluegreen: #077187;
+  --lightgreen: #74A57F;
+  --palegreen: #9ECE9A;
+  --darkestbrwn: #111D13;
+  --black: #000000;
+  --white: #ffffff;
+}
+
+/*mobile and tablet sizes*/
+/*@media screen and (min-width: 320px) and (max-width: 768px) {
     body {
         background-color: ;
         
     }
 }
-@media screen and (min-width: 481px) and (max-width: 768px) {
-    body {
-        background-color: ;
-    }
-}
+
 /*desktop*/
-/*@media screen and (min-width: 769px) and (max-width: 1024px) {
+/*@media screen and (min-width: 1024px) {
     body {
         background-color: ;
     }*/
+header {
+        background-color: var(--forest);
+        width: 100%;
+        height: 100%; 
+        padding-bottom: 0.313em; 
+        padding-top: 0.313em;
+        display: flex;
+        font-family: 'Open Sans', sans-serif;
+        
+}
+header ul {
+        /*border: red solid 2px;*/
+        display: inline-flex;
+}
+    
+.nav-box li {
+        list-style-type: none;
+        /*display: inline-block;*/
+        padding: 3.125em;
+        font-family: 'Open Sans', sans-serif;     
+}
+    
+header li a {
+        color: var(--black);
+        list-style-type: none;
+        text-decoration: none;
+          
+}
 
 .background-box {
     /*make gradient shine*/
     box-sizing: border-box;
-    background: linear-gradient(-45deg, #074F57, #077187, #74A57F);
+    background: linear-gradient(-45deg, var(--forest), var(--bluegreen), var(--lightgreen));
     border-style: none;
     padding: 2.813em;
 }
 
 .display-container {
     box-sizing: border-box;
-    border-color: #111D13;
+    border-color: var(--darkestbrwn);
     border-style: solid;
     padding: 3.125em;
     margin: 3.125em;
@@ -46,7 +78,7 @@ body {
 
 .display-container h2 {
     text-align: center;
-    color: #000000;
+    color: var(--black);
     
 }
 
@@ -61,8 +93,37 @@ body {
 }
 
 .display-container button {
-    background-color: #9ECE9A;
+    background-color: var(--lightgreen);
     border-radius: 5em;
     
 }
+
+.footer-box {
+    background-color: var(--forest);
+    box-sizing: border-box;
+    border-top: solid;
+    border-color: var(--darkestbrwn);
+    width: 100%; 
+    height: 100%;
+    color: var(--black);
+    padding-bottom: 0.313em; 
+    padding-top: 0.313em;
+    /*display: flex;
+    /*border: 2px solid red;*/
+    font-family: 'Open Sans', sans-serif;
     
+}
+
+footer {
+    display: flex;
+    justify-content: center;  
+      /*border: 2px solid rgb(179, 255, 0);*/
+      
+}
+footer li, a {
+    color: var(--black);
+    list-style-type: none;
+    text-decoration: none;
+    display: inline-flex;
+    padding: 3.125em;
+}
