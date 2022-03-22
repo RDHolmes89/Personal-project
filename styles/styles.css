@@ -36,13 +36,16 @@ header {
         padding-top: 0.313em;
         display: flex;
         font-family: 'Open Sans', sans-serif;
-        
+        box-sizing: border-box;
+        border-bottom: solid;
+        border-color: var(--darkestbrwn);
+        /*justify-content:flex-end;*/
 }
 header ul {
         /*border: red solid 2px;*/
         display: inline-flex;
 }
-    
+
 .nav-box li {
         list-style-type: none;
         /*display: inline-block;*/
@@ -94,9 +97,54 @@ header li a {
 
 .display-container button {
     background-color: var(--lightgreen);
+    border-color: var(--darkestbrwn);
     border-radius: 5em;
+    padding: 1.5em;
     
 }
+.display-container a {
+    justify-content: center;
+    border: red; solid;
+
+}
+
+.background-land {
+    box-sizing: border-box;
+    background: var(--bluegreen);
+    border-style: none;
+    padding: 2.813em;  
+}
+
+.landing-box {
+    box-sizing: border-box;
+    text-align: center;
+    padding: 3.125em;
+    margin: 3.125em; 
+}
+.landing-box span {
+   font-weight: bolder;
+   font-size: 1.98998em;
+}
+
+
+.plants-table table {
+    border-collapse: collapse;
+
+}
+.plants-table th {
+    text-align: center;
+    background-color: var(--palegreen);
+    border: var(--bluegreen) solid 1px;
+    padding: 0.2em;
+}
+.plants-table td {
+    display: flex;
+    flex-direction: column;
+  
+    
+}
+
+
 
 .footer-box {
     background-color: var(--forest);
@@ -116,7 +164,7 @@ header li a {
 
 footer {
     display: flex;
-    justify-content: center;  
+    justify-content:center;  
       /*border: 2px solid rgb(179, 255, 0);*/
       
 }
@@ -125,5 +173,5 @@ footer li, a {
     list-style-type: none;
     text-decoration: none;
     display: inline-flex;
-    padding: 3.125em;
+    padding: 1em;
 }
