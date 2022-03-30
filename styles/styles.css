@@ -4,6 +4,10 @@ body {
     margin: 0;
     overflow-x: hidden;
     font-family: 'Open Sans', sans-serif;
+    background-image: url(botanicalbackg.png);
+    /*background-repeat: no-repeat;*/
+    background-attachment: fixed;
+    background-size: cover;
 }
 :root {
   --forest: #074F57;
@@ -61,9 +65,8 @@ header li a {
 }
 
 .background-box {
-    /*make gradient shine*/
+    
     box-sizing: border-box;
-    background: linear-gradient(-45deg, var(--forest), var(--bluegreen), var(--lightgreen));
     border-style: none;
     padding: 2.813em;
 }
@@ -102,15 +105,15 @@ header li a {
     padding: 1.5em;
     
 }
-.display-container a {
+/*.display-container a {
     justify-content: center;
-    border: red; solid;
+    border: red; solid:
 
-}
+}*/
 
 .background-land {
     box-sizing: border-box;
-    background: var(--bluegreen);
+    /*background: var(--bluegreen);*/
     border-style: none;
     padding: 2.813em;  
 }
@@ -126,6 +129,12 @@ header li a {
    font-size: 1.98998em;
 }
 
+.contact-box {
+    box-sizing: border-box;
+    text-align: center;
+    padding: 3.125em;
+    margin: 3.125em; 
+}
 
 .plants-table table {
     border-collapse: collapse;
