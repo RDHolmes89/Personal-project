@@ -3,6 +3,7 @@ body {
     max-width: 100vw;
     margin: 0;
     overflow-x: hidden;
+    color: var(--white);
     font-family: 'Open Sans', sans-serif;
     background-image: url(botanicalbackg.png);
     /*background-repeat: no-repeat;*/
@@ -20,9 +21,11 @@ body {
 }
 
 /*mobile and tablet sizes*/
-/*@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
     body {
-        background-color: ;
+         background-image: url(botanicalbackg.png);
+         background-attachment: fixed;
+        background-size: cover;
         
     }
 }
@@ -45,6 +48,7 @@ header {
         border-color: var(--darkestbrwn);
         /*justify-content:flex-end;*/
 }
+/*WILL ADD TAG TERRA LOGO TO HEADER ON TOP LEFT, WILL BE CLICKABLE AND TAKE YOU BACK TO THE HOME PAGE OF SITE*/
 header ul {
         /*border: red solid 2px;*/
         display: inline-flex;
@@ -108,7 +112,7 @@ header li a {
 /*.display-container a {
     justify-content: center;
     border: red; solid:
-
+for your create account link center it maybe?
 }*/
 
 .background-land {
@@ -135,24 +139,45 @@ header li a {
     padding: 3.125em;
     margin: 3.125em; 
 }
+.plants-table {
+    box-sizing: border-box;
+    border-style: dashed;
+    width: 100%;
+    height: auto;
+    padding: 2em;
+    display: inline-flexbox;
+}
 
 .plants-table table {
     border-collapse: collapse;
+    text-align: center;
+   
 
 }
 .plants-table th {
     text-align: center;
-    background-color: var(--palegreen);
-    border: var(--bluegreen) solid 1px;
+    background-color: var(--forest);
+    border: var(--darkestbrwn) solid 1px;
     padding: 0.2em;
+    flex-direction: row;
 }
-.plants-table td {
-    display: flex;
-    flex-direction: column;
+/*.plants-table td {
+    \display: flex;
+    flex-direction: row;
   
-    
-}
+}*/
 
+.map-box {
+    box-sizing: border-box;
+    border-style: dashed;
+    height: auto;
+    width: 100%;
+    padding: 2em;
+   display: inline-flexbox;
+}
+.saved-maps, p {
+  text-align: center;  
+}
 
 
 .footer-box {
