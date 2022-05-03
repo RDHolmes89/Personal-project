@@ -6,9 +6,9 @@ body {
     color: var(--darkestbrwn);
     font-family: 'Open Sans', sans-serif;
     background-image: url(botanicalbackglite.png);
-    /*background-repeat: no-repeat;*/
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: contain;
+    background-size: cover, contain;
 }
 :root {
   --forest: #074F57;
@@ -143,6 +143,22 @@ for your create account link center it maybe?
    font-weight: bolder;
    font-size: 1.98998em;
 }
+.landing-features {
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    padding: 2em;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;  
+}
+.landing-features div {
+    background-color: #077187;
+    padding: 6em;
+    text-align: center;
+}
+
 .icons-box, h3 {
     align-items: center;
 }
