@@ -8,7 +8,7 @@ body {
     background-image: url(botanicalbackglite.png);
     /*background-repeat: no-repeat;*/
     background-attachment: fixed;
-    background-size: cover;
+    background-size: contain;
 }
 :root {
   --forest: #074F57;
@@ -175,8 +175,23 @@ for your create account link center it maybe?
     padding: 2em;
    display: inline-flexbox;
 }
-.saved-maps, p {
-  text-align: center;  
+.map-box, p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+.saved-maps {
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    padding: 2em;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;  
+}
+.saved-maps div {
+    background-color: #077187;
+    padding: 6em;
 }
 
 
