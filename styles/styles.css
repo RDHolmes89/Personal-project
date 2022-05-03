@@ -3,9 +3,9 @@ body {
     max-width: 100vw;
     margin: 0;
     overflow-x: hidden;
-    color: var(--white);
+    color: var(--darkestbrwn);
     font-family: 'Open Sans', sans-serif;
-    background-image: url(botanicalbackg.png);
+    background-image: url(botanicalbackglite.png);
     /*background-repeat: no-repeat;*/
     background-attachment: fixed;
     background-size: cover;
@@ -23,7 +23,7 @@ body {
 /*mobile and tablet sizes*/
 @media screen and (min-width: 320px) and (max-width: 768px) {
     body {
-         background-image: url(botanicalbackg.png);
+         background-image: url(botanicalbackglite.png);
          background-attachment: fixed;
         background-size: cover;
         
@@ -190,6 +190,7 @@ for your create account link center it maybe?
     color: var(--black);
     padding-bottom: 0.313em; 
     padding-top: 0.313em;
+    
     /*display: flex;
     /*border: 2px solid red;*/
     font-family: 'Open Sans', sans-serif;
@@ -199,6 +200,7 @@ for your create account link center it maybe?
 footer {
     display: flex;
     justify-content:center;  
+    
       /*border: 2px solid rgb(179, 255, 0);*/
       
 }
