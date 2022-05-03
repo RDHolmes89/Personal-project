@@ -132,8 +132,24 @@ for your create account link center it maybe?
    font-weight: bolder;
    font-size: 1.98998em;
 }
+.icons-box, h3 {
+    align-items: center;
+}
+.icons-box, ul {
+    list-style-type: none;
+    display:inline-flex;
+
+
+}
+.profile-box {
+    box-sizing: border-box;
+    /* border: solid; */
+    padding: 2em;
+    
+}
 
 .contact-box {
+    text-decoration: none;
     box-sizing: border-box;
     text-align: center;
     padding: 3.125em;
