@@ -9,7 +9,7 @@ const routes = require('')
 //set up ejs files to be viewed
 app.set('view engine', 'ejs');
 
-//app.use() will replace the app.get()req,res ('') which youll probably use first
+//app.use() will replaces the app.get()req,res ('') which youll probably use first
 
 app.listen(PORT, () => {
     console.log(`Server is running on ${PORT}`);
