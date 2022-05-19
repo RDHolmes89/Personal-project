@@ -48,10 +48,12 @@ header {
         border-color: var(--darkestbrwn);
         /*justify-content:flex-end;*/
 }
-/* header img {
-    width: 25rem;
+header img {
+    width: 26rem;
     height: auto;
-} */
+   
+    
+}
 header ul {
         /* border: red solid 2px; */
         display:inline-flex;
@@ -59,7 +61,7 @@ header ul {
 
 .nav-box li {
         list-style-type: none;
-        /* display: inline-block; */
+        display: inline-flex;
         padding: 3.125em;
         font-family: 'Open Sans', sans-serif;     
 }
