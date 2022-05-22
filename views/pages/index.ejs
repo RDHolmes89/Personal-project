@@ -1,34 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- include('../partials/head') -%>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tag Terra Landing</title>
-
-    <link rel="stylesheet" type="text/css" href="styles/styles.css">
-
-    <script defer src="scripts.js"></script>
-
-</head>
-
-<body>
-    <header>
-        <div class="nav-box">
-            <nav>
-                <ul>
-                    <li><a href="./index.html">HOME</a></li>
-                    <li><a href="./login.html">LOGIN</a></li>
-                    <li><a href="./maps.html">MAPS</a></li>
-                    <li><a href="./plants.html">RESOURCES</a></li>
-                </ul>
-
-
-            </nav>
-
-        </div>
-    </header>
+<%- include('../partials/nav') -%>
 
     <div class="background-land">
         <div class="landing-box">
@@ -41,7 +13,7 @@
                 problem. There are more than 1000 wildlife crossings in the U.S. and I believe more are needed. The most
                 common crossings are bridges, overpasses, tunnels, viaducts and culverts. Tag Terra is an interactive
                 way to get involved by mapping out your own wildlife crossings!</p>
-                <h4><a href="./create.html">Now are you ready to Tag Terra?</a></h4>
+                <h4><a href="/login">Now are you ready to Tag Terra?</a></h4>
                
 
         </div>
@@ -56,20 +28,4 @@
 
     </div>
 
-    <div class="footer-box">
-        <footer>
-
-            <div class="footer-links">
-                <ul>
-                    <li><a href="./about.html">MISSION</a></li>
-                    <li><a href="./contact.html">CONTACT</a></li>
-                    <li><a href="./index.html">HOME</a></li>
-                </ul>
-
-            </div>
-        </footer>
-    </div>
-
-</body>
-
-</html>
+    <%- include('../partials/footer') -%>
