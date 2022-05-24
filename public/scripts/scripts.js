@@ -46,6 +46,7 @@ function initMap() {
         var marker = new google.maps.Marker({
             position: props.coords,
             map: map,
+            draggable: true
         });
         //check for custom icon
         if (props.iconImage) {

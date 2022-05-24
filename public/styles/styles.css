@@ -230,14 +230,14 @@ for your create account link center it maybe?
     border-radius: 0 0 0 40px;
 }
 
-.plants-table {
+/* .plants-table {
     box-sizing: border-box;
     border-style: dashed;
     width: 100%;
     height: auto;
     padding: 2em;
     display: inline-flexbox;
-}
+} */
 
 /* .plants-table table {
     border-collapse: collapse;
