@@ -146,9 +146,13 @@ for your create account link center it maybe?
     padding: 3.125em;
     margin: 3.125em; 
 }
+.landing-box p {
+    font-size: larger;
+}
 .landing-box span {
    font-weight: bolder;
-   font-size: 1.98998em;
+   font-size: 3em;
+   color: var(--forest);
 }
 .landing-features {
     box-sizing: border-box;
@@ -161,9 +165,11 @@ for your create account link center it maybe?
     gap: 10px;  
 }
 .landing-features div {
-    background-color: #077187;
+    background-color: var(--bluegreen);
     padding: 6em;
     text-align: center;
+    font-weight: bolder;
+    font-size: larger;
 }
 
 .icons-box, h3 {
@@ -182,7 +188,10 @@ for your create account link center it maybe?
     
 }
 .profile-box span {
-    color:var(--darkestbrwn);
+    color:var(--forest);
+}
+.profile-box p {
+    font-size: larger;
 }
 
 .contact-box {
@@ -191,6 +200,14 @@ for your create account link center it maybe?
     text-align: center;
     padding: 3.125em;
     margin: 3.125em; 
+}
+.contact-box p {
+    font-size: larger;
+}
+.contact-box span {
+    font-weight: bolder;
+   font-size: 3em;
+   color: var(--forest);
 }
 .card {
     margin: 10vh auto;
