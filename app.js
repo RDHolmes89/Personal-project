@@ -9,6 +9,8 @@ const methodOverride = require('method-override');
 //set up ejs files to be viewed
 app.set('view engine', 'ejs');
 
+require('./config/connection');
+
 app.use(morgan('combined'));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: true }));

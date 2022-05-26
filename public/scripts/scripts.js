@@ -12,15 +12,7 @@ function initMap() {
     google.maps.event.addListener(map, 'click', function(e){
         addMarker({coords:e.latLng});
     });
-//  IMAGINE when you click it and trigger the event will save and store the lat and longitude in the markers array?// //WOULD I NEED A SAVE BUTTON OR FORM?
 
-    // create array of markers
-    //THIS ARRAY CAN BE STORED IN A DATABASE//
-    //WILL PROBABLY NEED TO CHANGE THE COORDS AND CONTENT SAVED TO BE BASED ON WHAT IS CLICKED
-
-    //maybe will plug in coords etc as the values for my form if i need to create one//
-    //PROBABLY need to create a varable to store what the content is acutually based on long and lats (i.e. content: plug in whatever var you chose)
-//might use flagiconimage for ending points only!
     var markers = [
         {
             coords: { lat: 42.5195, lng: -70.8967 },
@@ -66,3 +58,11 @@ function initMap() {
     }
 }
 
+//  IMAGINE when you click it and trigger the event will save and store the lat and longitude in the markers array?// //WOULD I NEED A SAVE BUTTON OR FORM?
+
+    // create array of markers
+    //THIS ARRAY CAN BE STORED IN A DATABASE//
+    //WILL PROBABLY NEED TO CHANGE THE COORDS AND CONTENT SAVED TO BE BASED ON WHAT IS CLICKED
+
+    //maybe will plug in coords etc as the values for my form if i need to create one//
+    //PROBABLY need to create a varable to store what the content is acutually based on long and lats (i.e. content: plug in whatever var you chose)
