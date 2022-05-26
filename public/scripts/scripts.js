@@ -24,14 +24,14 @@ function initMap() {
     var markers = [
         {
             coords: { lat: 42.5195, lng: -70.8967 },
-            iconImage: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+            
             content: 'Salem, MA'
         },
         { coords: { lat: 42.2832, lng: -71.1265 },
     content: 'Roslindale, MA'
     },
-    { coords: { lat: 42.1015, lng: -72.5898},
-    content: 'Springfield, MA'
+    { coords: { lat: 42.3601, lng: -71.0589},
+    content: 'Boston, MA'
     }
     ];
 

@@ -1,0 +1,26 @@
+//require whatever your data file is this page will handle post and deleting the map on pages
+//i.e const Map = require('.../models/map-model')
+
+//  WILL NEED TO FILL OUT MISSING INFO
+//  module.exports = {
+
+//     create_map: (req, res) => {
+//         const { probaly map coords  } = req.body;
+//         const newMap = new Map ({
+            
+
+//         });
+//         newMap.save();
+//         res.redirect('/pages/maps');
+// },
+// delete_map: (req, res) => {
+//     const { _id } = req.params;
+//     Map.deleteOne({_id: _id}, error => {
+//         if (error) {
+//             return error;
+//         } else {
+//             res.redirect('/profile');
+//         }
+//     });
+// }
+//  }

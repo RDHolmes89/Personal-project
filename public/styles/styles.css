@@ -57,13 +57,15 @@ header img {
 header ul {
         /* border: red solid 2px; */
         display:inline-flex;
+        font-weight: bold;
 }
 
 .nav-box li {
         list-style-type: none;
         display: inline-flex;
         padding: 3.125em;
-        font-family: 'Open Sans', sans-serif;     
+        font-family: 'Open Sans', sans-serif;   
+        font-weight: bold;  
 }
     
 header li a {
@@ -121,17 +123,15 @@ a:active {
 }
 
 .display-container button {
-    background-color: var(--lightgreen);
+    background-color: var(--bluegreen);
+    font-weight: bold;
+    font-size: medium;
     border-color: var(--darkestbrwn);
-    border-radius: 5em;
+    border-radius: 2em;
     padding: 1.5em;
     
 }
-/*.display-container a {
-    justify-content: center;
-    border: red; solid:
-for your create account link center it maybe?
-}*/
+
 
 .background-land {
     box-sizing: border-box;
@@ -140,7 +140,8 @@ for your create account link center it maybe?
     padding: 2.813em;  
 }
 
-.landing-box {
+.landing-box {  
+  backdrop-filter: saturate(180%) blur(10px);
     box-sizing: border-box;
     text-align: center;
     padding: 3.125em;
@@ -148,11 +149,21 @@ for your create account link center it maybe?
 }
 .landing-box p {
     font-size: larger;
+    font-weight: bolder;
 }
 .landing-box span {
    font-weight: bolder;
    font-size: 3em;
    color: var(--forest);
+}
+.landing-box button {
+    background-color: var(--bluegreen);
+    color:var(--black);
+    font-size: large;
+    font-weight: bold;
+    border-color: var(--darkestbrwn);
+    border-radius: 2em;
+    padding: 1.5em;
 }
 .landing-features {
     box-sizing: border-box;
@@ -170,6 +181,25 @@ for your create account link center it maybe?
     text-align: center;
     font-weight: bolder;
     font-size: larger;
+}
+.landing-imgs {
+   display:inline-block;
+   flex-wrap: wrap;
+   
+   
+}
+.landing-imgs div {
+    /* background-color: var(--bluegreen); */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+    
+}
+.landing-imgs img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    flex-direction: row;
 }
 
 .icons-box, h3 {
@@ -193,7 +223,23 @@ for your create account link center it maybe?
 .profile-box p {
     font-size: larger;
 }
-
+.about-box {
+    backdrop-filter: saturate(180%) blur(10px);
+    text-decoration: none;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 3.125em;
+    margin: 3.125em; 
+}
+.about-box p {
+    font-size: larger;
+    font-weight: bolder;
+}
+.about-box span {
+    font-weight: bolder;
+   font-size: 3em;
+   color: var(--forest);
+}
 .contact-box {
     text-decoration: none;
     box-sizing: border-box;
@@ -229,25 +275,29 @@ for your create account link center it maybe?
 }
 
 .card-label {
-    background-color: var(--forest);
-    width: fit-content;
+    
+    backdrop-filter: saturate(180%) blur(10px);
+    width:min-content;
     color: var(--white);
-    padding: 1% 3%;
+    
 }
-.card-label, span, a {
+
+.card-label span, a {
     color: var(--white);
-    /* padding: 1% 1%; */
-    margin: 1% 1%;
+    
 }
+
+
 .card-bottom {
-    width: 100%;
+    width: fit-content;
     height: auto;
     background-color: var(--white);
     padding: 3% 7% 10% 7%;
     border-radius: 0 0 0 40px;
 }
 
-/* .plants-table {
+/* TO BE IMPLEMENTED ONE DAY
+.plants-table {
     box-sizing: border-box;
     border-style: dashed;
     width: 100%;
@@ -275,20 +325,18 @@ for your create account link center it maybe?
   
 }*/
 
-/*map-box is now called by the id=map*/
-/* .map-box {
+.map-box {
+    backdrop-filter: saturate(180%) blur(10px);
     box-sizing: border-box;
-    border-style: dashed;
-    height: auto;
-    width: 100%;
-    padding: 2em;
-   display: inline-flexbox;
+    /* text-align: center; */
+    padding: 3.125em;
+    margin: 3.125em; 
 }
 .map-box, p {
     text-align: center;
     font-weight: bold;
-    font-size: 1.4em;
-} */
+    font-size: xx-large;
+} 
 #map{
     height: 600px;
     width: 100%;
@@ -304,8 +352,8 @@ for your create account link center it maybe?
   gap: 10px;  
 }
 .saved-maps div {
-    background-color: #077187;
-    padding: 6em;
+    background-color: var(--bluegreen);
+    padding: 5em;
 }
 
 
@@ -339,4 +387,5 @@ footer li, a {
     text-decoration: none;
     display: inline-flex;
     padding: 1em;
+    font-weight: bold;
 }
