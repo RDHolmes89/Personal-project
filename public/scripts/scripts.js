@@ -1,19 +1,19 @@
 
 function initMap() {
     //Map options
-    var options = {
+    const options = {
         zoom: 8,
         center: { lat: 42.3601, lng: -71.0589 },
     }
     //New map
-    var map = new
+    const map = new
         google.maps.Map(document.getElementById('map'), options);
     //Listen for click on map addList
     google.maps.event.addListener(map, 'click', function(e){
         addMarker({coords:e.latLng});
     });
 
-    var markers = [
+    const markers = [
         {
             coords: { lat: 42.5195, lng: -70.8967 },
             
@@ -35,7 +35,7 @@ function initMap() {
     
     //Add Marker Function
     function addMarker(props) {
-        var marker = new google.maps.Marker({
+        const marker = new google.maps.Marker({
             position: props.coords,
             map: map,
             draggable: true
@@ -47,7 +47,7 @@ function initMap() {
         }
         // Check content
         if(props.content){
-            var infoWindow = new google.maps.InfoWindow( {
+            const infoWindow = new google.maps.InfoWindow( {
                 content: props.content
             });
   // maybe add info to bottom addlistener function to save the location of where you dropped your pin//
@@ -57,6 +57,19 @@ function initMap() {
         }
     }
 }
+
+            //    this code is for if you add the update function.             marker.setMap(map);
+           
+//         }
+//         function update() {
+//             const path = marker.getPosition();
+//             lat = path.lat();
+//             lng = path.lng()
+//             alert('Lat: ' + lat + '\nLon: ' + lng);
+//         }
+//     }
+// }
+// initMap();
 
 //  IMAGINE when you click it and trigger the event will save and store the lat and longitude in the markers array?// //WOULD I NEED A SAVE BUTTON OR FORM?
 

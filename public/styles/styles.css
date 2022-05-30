@@ -156,6 +156,11 @@ a:active {
    font-size: 3em;
    color: var(--forest);
 }
+.landing-box a {
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
 .landing-box button {
     background-color: var(--bluegreen);
     color:var(--black);
@@ -173,7 +178,7 @@ a:active {
     justify-content: center;
     display: grid;
     grid-template-columns: auto auto auto auto;
-    gap: 10px;  
+    gap: 0.625em;  
 }
 .landing-features div {
     background-color: var(--bluegreen);
@@ -181,25 +186,28 @@ a:active {
     text-align: center;
     font-weight: bolder;
     font-size: larger;
+    
 }
 .landing-imgs {
-   display:inline-block;
+   display:flex;
    flex-wrap: wrap;
-   
+   justify-content: space-around;
    
 }
 .landing-imgs div {
     /* background-color: var(--bluegreen); */
     flex: 25%;
     max-width: 25%;
-    padding: 0 4px;
+    padding: 0 0.25em;
+    flex-direction: row;
     
 }
 .landing-imgs img {
-    margin-top: 8px;
+    margin-top: 0.5em;
     vertical-align: middle;
-    width: 100%;
-    flex-direction: row;
+    width: 30em;
+    height: 100%;
+    
 }
 
 .icons-box, h3 {
@@ -240,6 +248,16 @@ a:active {
    font-size: 3em;
    color: var(--forest);
 }
+.about-mission img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60em;
+    height: auto; 
+    filter:contrast(130%);
+}
+
+
 .contact-box {
     text-decoration: none;
     box-sizing: border-box;
@@ -259,7 +277,7 @@ a:active {
     margin: 10vh auto;
     width: 30%;
     max-width: 30%;
-    border-radius: 0 40px;
+    border-radius: 0 2.5em;
     
 }
 
@@ -269,8 +287,8 @@ a:active {
     background-image: url("/images/rdprofileimg.png");
     background-position: center center;
     background-size: cover;
-    border-bottom: var(--forest) 5px solid;
-    border-radius: 0 40px 0 0;
+    border-bottom: var(--forest) 0.3125em solid;
+    border-radius: 0 2.5em 0 0;
     
 }
 
@@ -293,7 +311,7 @@ a:active {
     height: auto;
     background-color: var(--white);
     padding: 3% 7% 10% 7%;
-    border-radius: 0 0 0 40px;
+    border-radius: 0 0 0 2.5em;
 }
 
 /* TO BE IMPLEMENTED ONE DAY
@@ -338,7 +356,7 @@ a:active {
     font-size: xx-large;
 } 
 #map{
-    height: 600px;
+    height: 37.5em;
     width: 100%;
 }
 
