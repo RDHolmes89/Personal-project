@@ -1,7 +1,7 @@
-// const express = require('express');
-// const siteRoutes = require('./site-routes');
-// const router = express.Router();
+const express = require('express');
+const siteRoutes = require('./site-routes');
+const router = express.Router();
 
-// router.use('/', siteRoutes);
+router.use('/', siteRoutes);
 
-// module.exports = router;
+module.exports = router;
