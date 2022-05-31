@@ -237,7 +237,7 @@ a:active {
     font-weight: bold;
     border-color: var(--darkestbrwn);
     border-radius: 2em;
-    padding: 1em; 
+    /* padding: 1em;  */
 }
 .about-box {
     backdrop-filter: saturate(180%) blur(10px);
