@@ -2,31 +2,31 @@
 
 <%- include('../partials/nav') -%>
 
-    <div class="background-box">
+<div class="background-box">
 
-        <div class="display-container">
+    <div class="display-container">
 
-            <h2>Create Account</h2>
-            <div class="inside-container">
-                <form action="#">
-                    <label for="first-name"><b>First name:<b></label>
-                    <input type="text" id="first-name" name="first-name" value="First name">
-                    <label for="last-name"><b>Last name:<b></label>
-                    <input type="text" id="last-name" name="last-name" value="Last name"><br><br>
-                    <label for="user"><b>Username:<b></label>
-                    <input type="text" id="user" name="user" value="User name">
-                    <label for="email"><b>Email address:<b></label>
-                    <input type="text" id="email" name="email" value="Email"><br><br>
-                    <!--<label for="phone"><b>Phone Number:<b></label>
-                    <input type="text" id="phone" name="Phone" value="555-***-****">-->
-                    <label for="pass"><b>Create Password:<b></label>
-                    <input type="text" id="pass" name="pass" value="Enter at least 8 characters"><br><br>
-                    <button type="button">Create My Account</button>
-                </form>
-            </div>
+        <h2>LOGIN</h2>
+        <div class="inside-container">
+            <form action="/create" method="POST">
+                <label for="email"><b>Email address:<b></label>
+                <input type="text" id="email" name="email" value="Email"><br><br>
+                <label for="pass"><b>Password:<b></label>
+                <input type="text" id="pass" name="pass" value="Password"><br><br>
+                <a href="/profile"><button type="button">Submit</button></a>
+
+                <button>
+                    <a href="/auth/google" role="button">Register with Google</a>
+                </button>
+            </form>
 
         </div>
 
+        <a href="./create">Create Account</a>
+        
     </div>
+
+
+</div>
 
     <%- include('../partials/footer') -%>

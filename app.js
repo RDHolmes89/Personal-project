@@ -17,6 +17,22 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(methodOverride('_method'));
 // app.use(routes);
+
+//SETTING UP FOR AUTHENTICATION BELOW
+// app.use(express.static(path.join(__dirname, 'public')));
+// app.use(express.urlencoded({ extended: true }));
+// app.use(express.json());
+// app.use(methodOverride('_method'));
+
+// app.use(session({
+//     secret: process.env.SECRET_KEY,
+//     resave: false,
+//     saveUninitialized: false
+// }));
+// app.use(passport.initialize());
+// app.use(passport.session());
+// app.use(routes);
+
 //ROUTES
 app.get('/', (req, res) => {
     res.render('pages/index');

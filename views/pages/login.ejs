@@ -8,12 +8,16 @@
 
             <h2>LOGIN</h2>
             <div class="inside-container">
-                <form action="#">
+                <form action="/login" method="POST">
                     <label for="email"><b>Email address:<b></label>
                     <input type="text" id="email" name="email" value="Email"><br><br>
                     <label for="pass"><b>Password:<b></label>
                     <input type="text" id="pass" name="pass" value="Password"><br><br>
                     <a href="/profile"><button type="button">Submit</button></a>
+
+                    <button>
+                        <a href="/auth/google" role="button">Sign In with Google</a>
+                    </button>
                 </form>
 
             </div>

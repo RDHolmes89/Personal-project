@@ -1,29 +1,79 @@
-// //NEED TO REQUIRE WHEREEVER MY DATA IS COMING FROM
+const User = require('../models/user-models');
+const passport = require('passport');
 
-// module.exports = {
-//     index: (req, res) => {
-//         res.render('pages/index');
-//     },
-//    create: (req, res) => {
-//     res.render('pages/create');
-// },
 
-//    login: (req, res) => {
-//     res.render('pages/login');
-// },
-//     profile: (req, res) => {
-//         res.render('pages/profile');
-//         //possible:here will be a varaible i.e maps: data
-//     },
-//    maps: (req, res) => {
-//     res.render('pages/maps');
-// },
+module.exports = {
+    index: (req, res) => {
+        res.render('pages/index');
+    },
+   create: (req, res) => {
+    res.render('pages/create');
+},
 
-//    about: (req, res) => {
-//     res.render('pages/about');
-// },
-// contact: (req, res) => {
-//     res.render('pages/contact');
-// },
-// }
+   login: (req, res) => {
+    res.render('pages/login');
+},
+login_post: (req, res) => {
+    const {username, password} = req.body;
+    const user = new User ({
+        username: username,
+        password: password
+    })
+    req.login(user, (error) => {
+      if (error) {
+        console.log(`The error at login is: ${error}`);
+      } else {
+        passport.authenticate('local')(req, res, () => {
+          res.redirect('/profile');
+        });
+      };
+   });
+},
+create_get: (req, res) => {
+    res.render('pages/create');
+},
+create_post: (req, res) => {
+    const {username, password} = req.body;
+    User.register({username: username}, password, (error, user) => {
+        if(error) {
+            console.log(`The error at register is: ${error}`);
+        } else {
+            passport.authenticate('local')(req, res, () => {
+                res.redirect('/profile');
+            });
+        }
+    });
+},
+google_get: passport.authenticate('google', {
+    scope: ['openid', 'profile', 'email']
+}),
+google_redirect_get: [
+    passport.authenticate('google', {failureRedirect: '/login'}),
+    function(req, res) {
+        res.redirect('/profile');
+    }
+],
+logout_get: (req, res) => {
+    req.logout();
+    res.redirect('/');
+},
+    profile: (req, res) => {
+        if (req.isAuthenticated()) {
+        res.render('pages/profile');
+        } else {
+            res.redirect('/login');
+        }
+        //possible:here will be a varaible i.e maps: data
+    },
+   maps: (req, res) => {
+    res.render('pages/maps');
+},
+
+   about: (req, res) => {
+    res.render('pages/about');
+},
+contact: (req, res) => {
+    res.render('pages/contact');
+},
+}
 

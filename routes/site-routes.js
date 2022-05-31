@@ -5,11 +5,20 @@
 // router.route('/')
 //     .get(siteCtrl.index);
 
-// router.route('/create')
-//     .get(siteCtrl.create);
 
 // router.route('/login')
 //     .get(siteCtrl.login);
+//      .get(siteCtrl.login_post);
+
+// router.route('/create')
+//     .get(siteCtrl.create_get);
+//      .get(siteCtrl.create_post);
+//  
+//  router.route('/auth/google/profile')
+//     .get(siteCtrl.google_redirect_get);
+
+// router.route('/logout')
+// .get(siteCtrl.logout_get);    
 
 // router.route('/profile')
 //     .get(siteCtrl.profile);
