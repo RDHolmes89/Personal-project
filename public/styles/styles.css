@@ -230,6 +230,15 @@ a:active {
 .profile-box p {
     font-size: larger;
 }
+.profile-btn {
+    background-color: var(--bluegreen);
+    color:var(--black);
+    font-size: large;
+    font-weight: bold;
+    border-color: var(--darkestbrwn);
+    border-radius: 2em;
+    padding: 1em; 
+}
 .about-box {
     backdrop-filter: saturate(180%) blur(10px);
     text-decoration: none;
