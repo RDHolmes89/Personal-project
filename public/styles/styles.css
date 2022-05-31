@@ -135,7 +135,6 @@ a:active {
 
 .background-land {
     box-sizing: border-box;
-    /*background: var(--bluegreen);*/
     border-style: none;
     padding: 2.813em;  
 }
