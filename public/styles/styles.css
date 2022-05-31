@@ -231,7 +231,7 @@ a:active {
     font-size: larger;
 }
 .profile-btn {
-    background-color: var(--bluegreen);
+    /* background-color: var(--bluegreen); */
     font-weight: bold;
     font-size: medium;
     border-color: var(--darkestbrwn);
