@@ -5,11 +5,7 @@ const passport = require('passport');
 module.exports = {
     index: (req, res) => {
         res.render('pages/index');
-    },
-   create: (req, res) => {
-    res.render('pages/create');
 },
-
    login: (req, res) => {
     res.render('pages/login');
 },
@@ -29,7 +25,7 @@ login_post: (req, res) => {
       };
    });
 },
-create_get: (req, res) => {
+create: (req, res) => {
     res.render('pages/create');
 },
 create_post: (req, res) => {
@@ -53,7 +49,7 @@ google_redirect_get: [
         res.redirect('/profile');
     }
 ],
-logout_get: (req, res) => {
+logout: (req, res) => {
     req.logout();
     res.redirect('/');
 },

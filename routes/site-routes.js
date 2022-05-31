@@ -11,17 +11,20 @@ router.route('/login')
     .post(siteCtrl.login_post);
 
 router.route('/create')
-    .get(siteCtrl.create_get)
+    .get(siteCtrl.create)
     .post(siteCtrl.create_post);
+
+router.route('/auth/google')
+    .get(siteCtrl.google_get);
 
 router.route('/auth/google/profile')
     .get(siteCtrl.google_redirect_get);
 
-router.route('/logout')
-    .get(siteCtrl.logout_get);
-
 router.route('/profile')
     .get(siteCtrl.profile);
+
+router.route('/logout')
+    .get(siteCtrl.logout);
 
 router.route('/maps')
     .get(siteCtrl.maps);
