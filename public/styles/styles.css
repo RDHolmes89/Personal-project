@@ -26,17 +26,22 @@ body {
          background-image: url(/images/botanicalbackglite.png);
          background-attachment: fixed;
          background-repeat: no-repeat;
-         background-size: cover, contain;
+         background-size: contain;
          max-width: 100%;
         
     }
 }
 
 /*desktop*/
-/*@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
     body {
-        background-color: ;
-    }*/
+        width: 100%;
+        background-image: url(/images/botanicalbackglite.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover, contain;
+    }
+}
 header {
         background-color: var(--forest);
         width: 100%;
