@@ -21,13 +21,13 @@ body {
 }
 
 /*mobile and tablet sizes*/
-@media screen and (min-width: 320px) and (max-width: 100%) {
+@media screen and (min-width: 320px) and (max-width: 728px) {
     body {
          background-image: url(/images/botanicalbackglite.png);
          background-attachment: fixed;
          background-repeat: no-repeat;
-         background-size: cover;
-         
+         background-size: cover, contain;
+         max-width: 100%;
         
     }
 }
