@@ -199,7 +199,7 @@ a:active {
 .landing-imgs {
    display:flex;
    flex-wrap: wrap;
-   justify-content: space-around;
+   justify-content: space-between;
    
 }
 .landing-imgs div {
