@@ -5,7 +5,7 @@ body {
     overflow-x: hidden;
     color: var(--black);
     font-family: 'Yanone Kaffeesatz', Open Sans, sans-serif;
-    font-size: xx-large;
+    font-size: x-large;
     background-image: url(/images/botanicalbackglite.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
