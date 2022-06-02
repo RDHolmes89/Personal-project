@@ -5,6 +5,7 @@ body {
     overflow-x: hidden;
     color: var(--black);
     font-family: 'Yanone Kaffeesatz', Open Sans, sans-serif;
+    font-size: xx-large;
     background-image: url(/images/botanicalbackglite.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -58,7 +59,7 @@ header {
         box-sizing: border-box;
         border-bottom: solid;
         border-color: var(--darkestbrwn);
-        
+              
 }
 header img {
     width: 26rem;
@@ -69,6 +70,7 @@ header img {
 header ul {
         display:inline-flex;
         font-weight: bold;
+        font-size: xx-large;
 }
 
 .nav-box li {
@@ -76,16 +78,14 @@ header ul {
         display: inline-flex;
         padding: 3.125em;
         font-family: 'Yanone Kaffeesatz', Open Sans, sans-serif;
-        font-weight: bold;  
+        font-weight: bold;
+        font-size: xx-large;
 }
     
 header li a {
         color: var(--black);
         list-style-type: none;
-        text-decoration: none;
-        
-        
-          
+        text-decoration: none;          
 }
 a:link,
 a:visited {
@@ -134,7 +134,7 @@ a:active {
 .display-container button {
     background-color: var(--bluegreen);
     font-weight: bold;
-    font-size: medium;
+    font-size: large;
     border-color: var(--darkestbrwn);
     border-radius: 2em;
     padding: 1.5em;
@@ -156,7 +156,7 @@ a:active {
     margin: 3.125em; 
 }
 .landing-box p {
-    font-size: x-large;
+    font-size: xx-large;
     font-weight: bolder;
 }
 .landing-box span {
@@ -165,7 +165,7 @@ a:active {
    color: var(--forest);
 }
 .landing-box a {
-    font-size: x-large;
+    font-size: xx-large;
     font-weight: bolder;
 }
 
@@ -236,7 +236,7 @@ a:active {
     color:var(--forest);
 }
 .profile-box p {
-    font-size: x-large;
+    font-size: xx-large;
 }
 .profile-btn {
     font-weight: bold;
@@ -254,7 +254,7 @@ a:active {
     margin: 3.125em; 
 }
 .about-box p {
-    font-size: x-large;
+    font-size: xx-large;
     font-weight: bolder;
 }
 .about-box span {
@@ -280,7 +280,7 @@ a:active {
     margin: 3.125em; 
 }
 .contact-box p {
-    font-size: x-large;
+    font-size: xx-large;
 }
 .contact-box span {
     font-weight: bolder;
@@ -401,7 +401,7 @@ a:active {
     
     /*display: flex;
     /*border: 2px solid red;*/
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Yanone Kaffeesatz', Open Sans, sans-serif;
     
 }
 
