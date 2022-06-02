@@ -4,7 +4,7 @@ body {
     margin: 0;
     overflow-x: hidden;
     color: var(--black);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Yanone Kaffeesatz', Open Sans, sans-serif;
     background-image: url(/images/botanicalbackglite.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -28,6 +28,7 @@ body {
          background-repeat: no-repeat;
          background-size: cover;
          max-width: 100%;
+         font-family: 'Yanone Kaffeesatz', Open Sans, sans-serif;
     
         
     }
@@ -42,6 +43,7 @@ body {
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover, contain;
+        font-family: 'Yanone Kaffeesatz', Open Sans, sans-serif;
         
     } 
 } */
@@ -52,7 +54,7 @@ header {
         padding-bottom: 0.313em; 
         padding-top: 0.313em;
         display: flex;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Yanone Kaffeesatz', Open Sans, sans-serif;
         box-sizing: border-box;
         border-bottom: solid;
         border-color: var(--darkestbrwn);
@@ -73,7 +75,7 @@ header ul {
         list-style-type: none;
         display: inline-flex;
         padding: 3.125em;
-        font-family: 'Open Sans', sans-serif;   
+        font-family: 'Yanone Kaffeesatz', Open Sans, sans-serif;
         font-weight: bold;  
 }
     
