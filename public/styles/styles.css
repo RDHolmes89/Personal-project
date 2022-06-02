@@ -5,7 +5,7 @@ body {
     overflow-x: hidden;
     color: var(--black);
     font-family: 'Yanone Kaffeesatz', Open Sans, sans-serif;
-    font-size: x-large;
+    font-size: large;
     background-image: url(/images/botanicalbackglite.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -165,7 +165,7 @@ a:active {
    color: var(--forest);
 }
 .landing-box a {
-    font-size: xx-large;
+    font-size: large;
     font-weight: bolder;
 }
 
@@ -193,13 +193,13 @@ a:active {
     padding: 6em;
     text-align: center;
     font-weight: bolder;
-    font-size: larger;
+    font-size: large;
     
 }
 .landing-imgs {
    display:flex;
    flex-wrap: wrap;
-   justify-content: space-between;
+   justify-content: space-around;
    
 }
 .landing-imgs div {
@@ -419,5 +419,6 @@ footer li, a {
     display: inline-flex;
     padding: 1em;
     font-weight: bold;
+    font-size: larger;
 }
 
