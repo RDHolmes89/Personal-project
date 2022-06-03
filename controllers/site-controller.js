@@ -50,8 +50,14 @@ google_redirect_get: [
     }
 ],
 logout: (req, res) => {
-    req.logout();
-    res.redirect('/');
+    req.logout(function(error) {
+        if(error) {
+            return error 
+         } else {
+            res.redirect('/');
+        }
+    });
+    
 },
     profile: (req, res) => {
         if (req.isAuthenticated()) {
