@@ -165,7 +165,7 @@ a:active {
    color: var(--forest);
 }
 .landing-box a {
-    font-size: large;
+    font-size: 2em;
     font-weight: bolder;
 }
 
@@ -316,6 +316,7 @@ a:active {
 
 .card-label span, a {
     color: var(--white);
+    font-size: medium;
     
 }
 
