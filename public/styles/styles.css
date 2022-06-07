@@ -271,7 +271,6 @@ a:active {
     filter:contrast(130%);
 }
 
-
 .contact-box {
     text-decoration: none;
     box-sizing: border-box;
@@ -294,7 +293,6 @@ a:active {
     border-radius: 0 2.5em;
     
 }
-
 .card-top {
     width: 100%;
     height: 45vh;
@@ -306,20 +304,16 @@ a:active {
     
 }
 
-.card-label {
-    
+.card-label { 
     backdrop-filter: saturate(180%) blur(10px);
     width:min-content;
     color: var(--white);
     
 }
-
 .card-label span, a {
     color: var(--white);
     
-    
 }
-
 
 .card-bottom {
     width: fit-content;
@@ -379,9 +373,9 @@ a:active {
     height: auto;
     width: 100%;
     padding: 2em;
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  gap: 10px;  
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;  
 }
 .saved-maps div {
     background-color: var(--bluegreen);
@@ -399,9 +393,6 @@ a:active {
     color: var(--black);
     padding-bottom: 0.313em; 
     padding-top: 0.313em;
-    
-    /*display: flex;
-    /*border: 2px solid red;*/
     font-family: 'Open Sans', Yanone Kaffeesatz, sans-serif;
     
 }
@@ -409,8 +400,6 @@ a:active {
 footer {
     display: flex;
     justify-content:center;  
-    
-      /*border: 2px solid rgb(179, 255, 0);*/
       
 }
 footer li, a {
